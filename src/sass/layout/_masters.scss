@@ -1,0 +1,132 @@
+.masters {
+  background-color: #f7f7f7;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
+.masters__pre-title {
+  margin-bottom: 20px;
+}
+
+.masters__title {
+  color: var(--first-text-color);
+  margin-bottom: 44px;
+}
+
+.masters-list {
+  margin-bottom: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+  .masters-list__item {
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      width: calc(100% / 2 - 30px);
+      margin-left: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc(100% / 4 - 30px);
+    }
+  }
+}
+
+.masters-list__item:hover .masters-list__top-text {
+  transform: translateY(0);
+}
+
+.masters-list__wrap {
+  position: relative;
+  overflow: auto;
+}
+
+.masters-list__top-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  font-weight: 600;
+  background-color: #ff6a00a7;
+  padding: 30px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
+}
+
+/* .masters-item + .masters-item {
+  margin-left: 30px;
+} */
+
+.masters-list__content {
+  padding-top: 30px;
+}
+
+.masters-list__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--second-title-color);
+  margin-bottom: 8px;
+}
+
+.masters-list__text {
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  margin-bottom: 30px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials__link {
+  width: 44px;
+  height: 44px;
+  background-color: tomato;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.socials__icon {
+  fill: currentColor;
+}
+
+.socials__link:hover {
+  background-color: teal;
+  color: tomato;
+}
+
+/* .masters-socials-link:hover {
+  background-color: teal;
+}
+
+.masters-socials-link:hover .masters-socials-icon {
+  fill: tomato;
+} */
+
+.socials__item {
+  & + & {
+    margin-left: 10px;
+  }
+}

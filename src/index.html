@@ -5,34 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NBDgroup</title>
     <link rel="shortcut icon" type="image/jpg" href="./images/favicon.png" />
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./sass/main.scss" />
   </head>
   <body>
-    <header>
-      <a href="#"><img src="./images/logo_site.png" alt="logo" width="70" /></a>
-      <nav>
-        <ul>
-          <li><a href="#">O firmie</a></li>
-          <li><a href="#">Nasze usługi</a></li>
-          <li><a href="#">Nasz zespół</a></li>
-          <li><a href="#">Kontakt</a></li>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header__container">       
+      <nav class="navigation">
+        <a href="#" class="logo"><img src="./images/logo_site.png" alt="logo" width="70" /></a>
+        <ul class="nav-list list">
+          <li class="nav-list__item"><a class="nav-list__link" href="#">O firmie</a></li>
+          <li class="nav-list__item"><a class="nav-list__link" href="#">Nasze usługi</a></li>
+          <li class="nav-list__item"><a class="nav-list__link" href="#">Nasz zespół</a></li>
+          <li class="nav-list__item"><a class="nav-list__link" href="#">Kontakt</a></li>
         </ul>
       </nav>
-      <a href="tel:+48733130895">+48 733 130 895</a>
+      <div class="header-connect">
+        <a href="tel:+48733130895" class="header-connect__tel">+48 733 130 895</a>
+      </div>
+      <button type="button" class="menu-open-btn"><img src="./images/mob-menu-icon.png" alt="burger menu" width="30px"></button>
+      </div>
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close-btn">X</button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-list__item">
+                <a href="" class="mob-menu-list__link">О нас</a>
+              </li>
+              <li class="mob-menu-list__item">
+                <a href="#" class="mob-menu-list__link"
+                  >Услуги и цены</a
+                >
+              </li>
+              <li class="mob-menu-list__item">
+                <a href="#masters" class="mob-menu-list__link">Мастера</a>
+              </li>
+              <li class="mob-menu-list__item">
+                <a href="" class="mob-menu-list__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <div class="mob-contacts">
+              <a href="tel:+380441111111" class="mob-contacts__tel"
+                >+38 044 111 11 11</a
+              >
+              <button
+                type="button"
+                class="mob-contacts__btn btn"
+                data-modal-open
+              >
+                онлайн-запись
+              </button>
+            </div>
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-list__item">
+                <a href="" class="mob-soc-list__link">Instagram</a>
+              </li>
+              <li class="mob-soc-list__item">
+                <a href="" class="mob-soc-list__link">Youtube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
+      <!-- Hero -->
+      <div class="container hero__container">
+        <section class="hero">
+
+          <div class="hero-soc"><ul class="soc-list list">
+            <li class="soc-list__item"><a href="" class="soc-list__link">Instagram</a></li>
+            <li class="soc-list__item"><a href="" class="soc-list__link">Facebook</a></li>
+          </ul>
+        </div>
+          
+        <div class="hero-content">
+          <p lang="pl" class="hero-content__pre-title pre-title pre-title--light-theme"
+          >agencja pracy</p>
+          <h1 lang="pl" class="hero-content__title"> <span class="hero-content__title-accent">NBD</span>GROUP</h1>
+          <p lang="pl" class="hero-content__after-title">Pracuj z nami</p>
+          <button type="button" class="header-connect__btn btn" data-modal-open>Znajdź pracę</button>
+        </div>
+          
+        </div>        
+      </div>
       <section class="hero">
-        <ul>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Facebook</a></li>
+       <div class="hero-soc">
+        <ul class="soc-list list">
+          <li class="soc-list__item"><a href="#"  class="soc-list__link">Instagram</a></li>
+          <li class="soc-list__item"><a href="#" class="soc-list__link">Facebook</a></li>
         </ul>
-        <p lang="pl">agencja pracy</p>
-        <h1 lang="pl">NBD <span>GROUP</span></h1>
+       </div>
+        <!-- <p lang="pl">agencja pracy</p>
+        <h1 lang="pl"> <span>NBD</span>GROUP</h1>
         <p lang="pl">Pracuj z nami</p>
-        <button type="button">Znajdź pracę</button>
+        <button type="button">Znajdź pracę</button> -->
+      </div>
+      
       </section>
-      <section>
+      <!-- <section>
         <ul>
           <li>
             <img
@@ -201,6 +288,7 @@
         <li><a href="#">Instagram</a></li>
         <li><a href="#">Facebook</a></li>
       </ul>
-    </footer>
+    </footer> -->
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

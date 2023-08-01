@@ -1,0 +1,4 @@
+.section-title {
+  font-family: 'Raleway', sans-serif;
+  @include font(42px, null, 49px, 0.05em);
+}
