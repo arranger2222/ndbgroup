@@ -1,6 +1,5 @@
 .about {
-  padding-top: 139px;
-  padding-bottom: 121px;
+  padding: 85px 0;
 }
 
 .about__container {
@@ -8,12 +7,12 @@
 }
 
 .about-list {
-  display: flex;
+  display: none;
   flex-shrink: 0;
-}
-
-.about__list {
   margin-right: 64px;
+  @include tab {
+    display: flex;
+  }
 }
 
 .about-list__item + .about-list__item {
@@ -22,6 +21,15 @@
 
 .about-wrap__pre-title {
   margin-bottom: 20px;
+  &::before {
+    content: '';
+
+    width: 60px;
+    height: 1px;
+
+    margin-right: 20px;
+    background-color: var(--second-title-color);
+  }
 }
 
 .about-wrap__title {
@@ -42,6 +50,10 @@
   letter-spacing: 0.02em;
   color: #555555;
   margin-bottom: 40px;
+  &--accent {
+    color: var(--accent-color);
+    font-weight: bold;
+  }
 }
 
 .about-wrap__btn {
