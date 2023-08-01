@@ -4,8 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding: 85px 0;
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -21,22 +20,22 @@
 }
 
 .price-wrap {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
 .prices-list {
-  width: 50%;
-  padding: 30px 40px;
+  width: 100%;
+  padding: 30px 16px;
 
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
-.prices-list:nth-child(4n-1),
-.prices-list:nth-child(4n-2) {
-  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
-}
+// .prices-list:nth-child(4n-1),
+// .prices-list:nth-child(4n-2) {
+//   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+// }
 
 /* .prices-list:nth-child(odd) {
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
@@ -52,22 +51,22 @@
   align-items: baseline;
 }
 
-.prices-item + .prices-item {
-  margin-top: 20px;
+.prices-item {
+  margin-top: 30px;
 }
 
-.prices-item::before {
-  content: "";
+// .prices-item::before {
+//   content: '';
 
-  border-bottom: 1px solid rgba(157, 164, 189, 0.12);
-  margin-left: 6px;
-  margin-right: 6px;
+//   border-bottom: 1px solid rgba(157, 164, 189, 0.12);
+//   margin-left: 6px;
+//   margin-right: 6px;
 
-  flex-grow: 1;
-}
+//   flex-grow: 1;
+// }
 
 .prices-text {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;

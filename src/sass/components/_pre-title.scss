@@ -18,3 +18,13 @@
 .pre-title--dark-theme {
   color: var(--first-text-color);
 }
+
+.pre-title::before {
+  content: '';
+
+  width: 60px;
+  height: 1px;
+
+  margin-right: 20px;
+  background-color: currentColor;
+}

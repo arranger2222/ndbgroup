@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name=description>
+    <meta name=description content="Designed & developed by MaxCode Studio">
     <title>NBDgroup</title>
     <link rel="shortcut icon" type="image/jpg" href="./images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,7 +26,10 @@
     <header class="header">
       <div class="container header__container">       
       <nav class="navigation">
-        <a href="#" class="logo"><img src="./images/logo_site.png" alt="logo" width="70" /></a>
+        <div class="logo__container">
+          <a href="#" class="logo__link"><span class="logo-accent">NBD</span><span class="logo-text">group</span></a>
+        </div>
+        <!-- <a href="#" class="logo"><img src="./images/logo_site.png" alt="logo" width="70" /></a> -->
         <ul class="nav-list list">
           <li class="nav-list__item"><a class="nav-list__link" href="#">O firmie</a></li>
           <li class="nav-list__item"><a class="nav-list__link" href="#">Nasze usługi</a></li>
@@ -45,32 +48,32 @@
             <button type="button" class="menu-close-btn">X</button>
             <ul class="mob-menu-list list">
               <li class="mob-menu-list__item">
-                <a href="" class="mob-menu-list__link">О нас</a>
+                <a href="" class="mob-menu-list__link">O firmie</a>
               </li>
               <li class="mob-menu-list__item">
                 <a href="#" class="mob-menu-list__link"
-                  >Услуги и цены</a
+                  >Nasze usługi</a
                 >
               </li>
               <li class="mob-menu-list__item">
-                <a href="#masters" class="mob-menu-list__link">Мастера</a>
+                <a href="#masters" class="mob-menu-list__link">Nasz zespół</a>
               </li>
               <li class="mob-menu-list__item">
-                <a href="" class="mob-menu-list__link">Контакты</a>
+                <a href="" class="mob-menu-list__link">Kontakt</a>
               </li>
             </ul>
           </div>
           <div class="mob-menu-bottom">
             <div class="mob-contacts">
-              <a href="tel:+380441111111" class="mob-contacts__tel"
-                >+38 044 111 11 11</a
+              <a href="tel:+48 733 130 895" class="mob-contacts__tel"
+                >+48 733 130 895</a
               >
               <button
                 type="button"
                 class="mob-contacts__btn btn"
                 data-modal-open
               >
-                онлайн-запись
+              Znajdź pracę
               </button>
             </div>
             <ul class="mob-soc-list list">
@@ -78,7 +81,7 @@
                 <a href="" class="mob-soc-list__link">Instagram</a>
               </li>
               <li class="mob-soc-list__item">
-                <a href="" class="mob-soc-list__link">Youtube</a>
+                <a href="" class="mob-soc-list__link">Facebook</a>
               </li>
             </ul>
           </div>
@@ -159,45 +162,45 @@
           personelu.
         </p>
         <button type="button" class="about-wrap__btn btn">Znajdź pracę</button>
-        </div>
-
-        
-        </div>
-        
-        
+        </div>        
+        </div>        
       </section>
-      <section>
-        <p>Dbamy o naszych pracowników.</p>
-        <h2>Nasza działalność</h2>
-        <ul>
-          <li>
-            <p>Kwaterujemy i zapewniamy własnym transportem</p>
+      <section class="prices section">
+        <div class="container">
+          <p class="prices-pre-title pre-title">Dbamy o naszych pracowników.</p>
+        <h2 class="prices-title section-title">Nasza działalność</h2>
+        <div class="price-wrap">
+          <ul class="prices-list list">
+          <li class="prices-item">
+            <p class="prices-text">Kwaterujemy i zapewniamy własnym transportem</p>
           </li>
-          <li>
-            <p>Legalizujemy pobyt i zatrudniamy cudzoziemców</p>
+          <li class="prices-item">
+            <p class="prices-text">Legalizujemy pobyt i zatrudniamy cudzoziemców</p>
           </li>
-          <li>
-            <p>Rzetelno podchodzimy do procesu rekrutacji</p>
+          <li class="prices-item">
+            <p class="prices-text">Rzetelno podchodzimy do procesu rekrutacji</p>
           </li>
-          <li>
-            <p>Wspieramy stały kontakt z koordynatorem projektu</p>
+          <li class="prices-item">
+            <p class="prices-text">Wspieramy stały kontakt z koordynatorem projektu</p>
+          </li>
+        
+          <li class="prices-item">
+            <p class="prices-text">Każdy pracownik otrzymuje osobistego kierownika projektu</p>
+          </li>
+          <li class="prices-item">
+            <p class="prices-text">Uruchamiamy projekty już od pięciu osób</p>
+          </li>
+          <li class="prices-item">
+            <p class="prices-text">Minimalna ilość godzin w miesiącu na pracownika: 200</p>
+          </li>
+          <li class="prices-item">
+            <p class="prices-text">Wsparcie i konsultacje - 24/7</p>
           </li>
         </ul>
-        <ul>
-          <li>
-            <p>Każdy pracownik otrzymuje osobistego kierownika projektu</p>
-          </li>
-          <li>
-            <p>Uruchamiamy projekty już od pięciu osób</p>
-          </li>
-          <li>
-            <p>Minimalna ilość godzin w miesiącu na pracownika: 200</p>
-          </li>
-          <li>
-            <p>Wsparcie i konsultacje - 24/7</p>
-          </li>
-        </ul>
-        <button type="button">Znajdź pracę</button>
+        </div>
+        
+        <button type="button"  class="prices-btn btn">Znajdź pracę</button>
+        </div>
       </section>
       <!-- <section>
         <ul>

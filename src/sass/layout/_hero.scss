@@ -124,16 +124,6 @@
   color: var(--header-text-color);
 }
 
-.pre-title::before {
-  content: '';
-
-  width: 60px;
-  height: 1px;
-
-  margin-right: 20px;
-  background-color: var(--header-text-color);
-}
-
 .pre-title-light-theme::before {
   background-color: rgba(157, 164, 189, 0.6);
 }

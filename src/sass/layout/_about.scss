@@ -2,8 +2,9 @@
   padding: 85px 0;
 }
 
-.about__container {
+.about-wrap {
   display: flex;
+  flex-direction: column;
 }
 
 .about-list {
@@ -58,6 +59,7 @@
 
 .about-wrap__btn {
   color: var(--second-btn-color);
+  margin: 0 auto;
   &:hover,
   &:focus {
     color: var(--accent-color);
