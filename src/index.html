@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name=description content="Designed & developed by MaxCode Studio">
+    <meta name="description" content="Designed & developed by MaxCode Studio" />
     <title>NBDgroup</title>
     <link rel="shortcut icon" type="image/jpg" href="./images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet"
+    <link
+      rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
-      
     />
     <link
       rel="stylesheet"
@@ -24,23 +24,38 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container header__container">       
-      <nav class="navigation">
-        <div class="logo__container">
-          <a href="#" class="logo__link"><span class="logo-accent">NBD</span><span class="logo-text">group</span></a>
+      <div class="container header__container">
+        <nav class="navigation">
+          <div class="logo__container">
+            <a href="#" class="logo__link"
+              ><span class="logo-accent">NBD</span
+              ><span class="logo-text">group</span></a
+            >
+          </div>
+          <!-- <a href="#" class="logo"><img src="./images/logo_site.png" alt="logo" width="70" /></a> -->
+          <ul class="nav-list list">
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">O firmie</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">Nasze usługi</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">Nasz zespół</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-connect">
+          <a href="tel:+48733130895" class="header-connect__tel"
+            >+48 733 130 895</a
+          >
         </div>
-        <!-- <a href="#" class="logo"><img src="./images/logo_site.png" alt="logo" width="70" /></a> -->
-        <ul class="nav-list list">
-          <li class="nav-list__item"><a class="nav-list__link" href="#">O firmie</a></li>
-          <li class="nav-list__item"><a class="nav-list__link" href="#">Nasze usługi</a></li>
-          <li class="nav-list__item"><a class="nav-list__link" href="#">Nasz zespół</a></li>
-          <li class="nav-list__item"><a class="nav-list__link" href="#">Kontakt</a></li>
-        </ul>
-      </nav>
-      <div class="header-connect">
-        <a href="tel:+48733130895" class="header-connect__tel">+48 733 130 895</a>
-      </div>
-      <button type="button" class="menu-open-btn"><img src="./images/mob-menu-icon.png" alt="burger menu" width="30px"></button>
+        <button type="button" class="menu-open-btn">
+          <img src="./images/mob-menu-icon.png" alt="burger menu" width="30" />
+        </button>
       </div>
       <div class="mob-menu is-hidden">
         <div class="container">
@@ -51,9 +66,7 @@
                 <a href="" class="mob-menu-list__link">O firmie</a>
               </li>
               <li class="mob-menu-list__item">
-                <a href="#" class="mob-menu-list__link"
-                  >Nasze usługi</a
-                >
+                <a href="#" class="mob-menu-list__link">Nasze usługi</a>
               </li>
               <li class="mob-menu-list__item">
                 <a href="#masters" class="mob-menu-list__link">Nasz zespół</a>
@@ -65,7 +78,7 @@
           </div>
           <div class="mob-menu-bottom">
             <div class="mob-contacts">
-              <a href="tel:+48 733 130 895" class="mob-contacts__tel"
+              <a href="tel:+48733130895" class="mob-contacts__tel"
                 >+48 733 130 895</a
               >
               <button
@@ -73,7 +86,7 @@
                 class="mob-contacts__btn btn"
                 data-modal-open
               >
-              Znajdź pracę
+                Znajdź pracę
               </button>
             </div>
             <ul class="mob-soc-list list">
@@ -90,148 +103,188 @@
     </header>
     <main>
       <!-- Hero -->
-      <div class="container hero__container">
-        <section class="hero">
-
-          <div class="hero-soc"><ul class="soc-list list">
-            <li class="soc-list__item"><a href="" class="soc-list__link">Instagram</a></li>
-            <li class="soc-list__item"><a href="" class="soc-list__link">Facebook</a></li>
-          </ul>
-        </div>
-          
-        <div class="hero-content">
-          <p lang="pl" class="hero-content__pre-title pre-title pre-title--light-theme"
-          >agencja pracy</p>
-          <h1 lang="pl" class="hero-content__title"> <span class="hero-content__title-accent">NBD</span>GROUP</h1>
-          <p lang="pl" class="hero-content__after-title">Pracuj z nami</p>
-          <button type="button" class="header-connect__btn btn" data-modal-open>Znajdź pracę</button>
-        </div>
-          
-        </div>        
-      </div>
       <section class="hero">
-       <div class="hero-soc">
-        <ul class="soc-list list">
-          <li class="soc-list__item"><a href="#"  class="soc-list__link">Instagram</a></li>
-          <li class="soc-list__item"><a href="#" class="soc-list__link">Facebook</a></li>
-        </ul>
-       </div>       
-      </div>      
+        <div class="container hero__container">
+          <div class="hero-soc">
+            <ul class="soc-list list">
+              <li class="soc-list__item">
+                <a href="" class="soc-list__link">Instagram</a>
+              </li>
+              <li class="soc-list__item">
+                <a href="" class="soc-list__link">Facebook</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-content">
+            <p
+              lang="pl"
+              class="hero-content__pre-title pre-title pre-title--light-theme"
+            >
+              agencja pracy
+            </p>
+            <h1 lang="pl" class="hero-content__title">
+              <span class="hero-content__title-accent">NBD</span>GROUP
+            </h1>
+            <p lang="pl" class="hero-content__after-title">Pracuj z nami</p>
+            <button
+              type="button"
+              class="header-connect__btn btn"
+              data-modal-open
+            >
+              Znajdź pracę
+            </button>
+          </div>
+        </div>
       </section>
 
       <!-- O firmie -->
       <section class="about">
         <div class="container about__container">
           <ul class="about-list about__list list">
-          <li class="about-list__item">
-            <img
-              src="./images/about_1.jpg"
-              alt="mężczyzna w garniturze i mężczyzna w kasku patrząc na dokument"
-              width="270"
-              class="about-img"
-            />
-          </li class="about-list__item">
-          <li>
-            <img
-              src="./images/about_2.jpg"
-              alt="Młody mężczyzna w czarnym kapeluszu przeciwsłonecznym i białej koszuli stoi w pomieszczeniu, trzymając w jednej ręce dokument, a drugą pokazując kciuk do góry."
-              width="270"
-              class="about-img"
-            />
-          </li>
-        </ul>
-        <div class="about-wrap">
-          <p class="about-wrap__pre-title pre-title pre-title--dark-theme">o firmie</p>
-        <h2 class="about-wrap__title section-title"><span class="section-title-accent">NBD Group</span> - Agencja Pracy Tymczasowej</h2>
-        <p class="about-wrap__text">
-          Wspieramy firmy w uzupełnianiu braków kadrowych oraz oferujemy pomoc w
-          poszukiwaniu pracy. Działamy na terenie całej Polski, z główną
-          siedzibą w Poznaniu.
-        </p>
-        <p class="about-wrap__text">
-          Jesteśmy certyfikowaną Agencją Pracy Tymczasowej wpisaną do Krajowego
-          Rejestru Sądowego pod <span class="about-wrap__text--accent">nr. 0001000791</span> 
-        </p>
-        <p class="about-wrap__text">
-          Na polskim rynku pracy wciąż jest za mało dostępnych pracowników,
-          dlatego na niedobory kadrowe cierpią m.in. takie branże, jak:
-          produkcja, logistyka, budownictwo, handel czy usługi. Jako agencja
-          pracy pomagamy przedsiębiorcom w znalezieniu wykwalifikowanych
-          pracowników z zagranicy. Dzięki temu ich firmy mogą się skupić na
-          swojej podstawowej działalności, nie martwiąc się o niedobór
-          personelu.
-        </p>
-        <button type="button" class="about-wrap__btn btn">Znajdź pracę</button>
-        </div>        
-        </div>        
+            <li class="about-list__item">
+              <img
+                src="./images/about_1.jpg"
+                alt="mężczyzna w garniturze i mężczyzna w kasku patrząc na dokument"
+                width="270"
+                class="about-img"
+              />
+            </li>
+            <li class="about-list__item">
+              <img
+                src="./images/about_2.jpg"
+                alt="Młody mężczyzna w czarnym kapeluszu przeciwsłonecznym i białej koszuli stoi w pomieszczeniu, trzymając w jednej ręce dokument, a drugą pokazując kciuk do góry."
+                width="270"
+                class="about-img"
+              />
+            </li>
+          </ul>
+          <div class="about-wrap">
+            <p class="about-wrap__pre-title pre-title pre-title--dark-theme">
+              o firmie
+            </p>
+            <h2 class="about-wrap__title section-title">
+              <span class="section-title-accent">NBD Group</span> - Agencja
+              Pracy Tymczasowej
+            </h2>
+            <p class="about-wrap__text">
+              Wspieramy firmy w uzupełnianiu braków kadrowych oraz oferujemy
+              pomoc w poszukiwaniu pracy. Działamy na terenie całej Polski, z
+              główną siedzibą w Poznaniu.
+            </p>
+            <p class="about-wrap__text">
+              Jesteśmy certyfikowaną Agencją Pracy Tymczasowej wpisaną do
+              Krajowego Rejestru Sądowego pod
+              <span class="about-wrap__text--accent">nr. 0001000791</span>
+            </p>
+            <p class="about-wrap__text">
+              Na polskim rynku pracy wciąż jest za mało dostępnych pracowników,
+              dlatego na niedobory kadrowe cierpią m.in. takie branże, jak:
+              produkcja, logistyka, budownictwo, handel czy usługi. Jako agencja
+              pracy pomagamy przedsiębiorcom w znalezieniu wykwalifikowanych
+              pracowników z zagranicy. Dzięki temu ich firmy mogą się skupić na
+              swojej podstawowej działalności, nie martwiąc się o niedobór
+              personelu.
+            </p>
+            <button type="button" class="about-wrap__btn btn">
+              Znajdź pracę
+            </button>
+          </div>
+        </div>
       </section>
+
+      <!-- Prices -->
       <section class="prices section">
         <div class="container">
           <p class="prices-pre-title pre-title">Dbamy o naszych pracowników.</p>
-        <h2 class="prices-title section-title">Nasza działalność</h2>
-        <div class="price-wrap">
-          <ul class="prices-list list">
-          <li class="prices-item">
-            <p class="prices-text">Kwaterujemy i zapewniamy własnym transportem</p>
-          </li>
-          <li class="prices-item">
-            <p class="prices-text">Legalizujemy pobyt i zatrudniamy cudzoziemców</p>
-          </li>
-          <li class="prices-item">
-            <p class="prices-text">Rzetelno podchodzimy do procesu rekrutacji</p>
-          </li>
-          <li class="prices-item">
-            <p class="prices-text">Wspieramy stały kontakt z koordynatorem projektu</p>
-          </li>
-        
-          <li class="prices-item">
-            <p class="prices-text">Każdy pracownik otrzymuje osobistego kierownika projektu</p>
-          </li>
-          <li class="prices-item">
-            <p class="prices-text">Uruchamiamy projekty już od pięciu osób</p>
-          </li>
-          <li class="prices-item">
-            <p class="prices-text">Minimalna ilość godzin w miesiącu na pracownika: 200</p>
-          </li>
-          <li class="prices-item">
-            <p class="prices-text">Wsparcie i konsultacje - 24/7</p>
-          </li>
-        </ul>
-        </div>
-        
-        <button type="button"  class="prices-btn btn">Znajdź pracę</button>
+          <h2 class="prices-title section-title">Nasza działalność</h2>
+          <div class="price-wrap">
+            <ul class="prices-list list">
+              <li class="prices-item">
+                <p class="prices-text">
+                  Kwaterujemy i zapewniamy własnym transportem
+                </p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-text">
+                  Legalizujemy pobyt i zatrudniamy cudzoziemców
+                </p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-text">
+                  Rzetelno podchodzimy do procesu rekrutacji
+                </p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-text">
+                  Wspieramy stały kontakt z koordynatorem projektu
+                </p>
+              </li>
+
+              <li class="prices-item">
+                <p class="prices-text">
+                  Każdy pracownik otrzymuje osobistego kierownika projektu
+                </p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-text">
+                  Uruchamiamy projekty już od pięciu osób
+                </p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-text">
+                  Minimalna ilość godzin w miesiącu na pracownika: 200
+                </p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-text">Wsparcie i konsultacje - 24/7</p>
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="prices-btn btn">Znajdź pracę</button>
         </div>
       </section>
-      <!-- <section>
-        <ul>
-          <li>
-            <span>600</span>
-            <p>Pracowników zatrudnionych</p>
-          </li>
-          <li>
-            <span>50</span>
-            <p>Aktywnych projektów</p>
-          </li>
-          <li>
-            <span>20</span>
-            <p>Wniosków tygodniowo</p>
-          </li>
-          <li>
-            <span>300</span>
-            <p>Wolnych miejsc pracy</p>
-          </li>
-        </ul>
-        <p>Indywidualnie podchodzimy do każdego procesu</p>
-        <h2>
-          Kierujemy swoje usługi do osób poszukujących pracy oraz do firm
-          chcących pozyskać pracowników do realizacji swoich inwestycji.
-        </h2>
-        <p>
-          Pozyskujemy pracowników z Ukrainy, Gruzji, Białorusi, Mołdawii i
-          innych krajów bloku wschodniego. Zapewniamy koordynatora zespołu,
-          który kontaktuje się z pracownikami.
-        </p>
-      </section> -->
+
+      <!-- Reasons -->
+      <section class="reasons section">
+        <div class="container reasons-container">
+          <div class="reasons-right">
+            <p class="reasons-pre-title pre-title pre-title-dark-theme">
+              Zwłaszcza podchodzimy do każdego procesu
+            </p>
+            <h2 class="reasons-title section-title">
+              Kierujemy swoje usługi do osób poszukujących pracy oraz do firm
+              chcących pozyskać pracowników do realizacji swoich inwestycji.
+            </h2>
+            <p class="reasons-after-title">
+              Pozyskujemy pracowników z Ukrainy, Gruzji, Białorusi, Mołdawii i
+              innych krajów bloku wschodniego. Zapewniamy koordynatora zespołu,
+              który kontaktuje się z pracownikami.
+            </p>
+          </div>
+
+          <div class="reasons-left">
+            <ul class="reasons-list list">
+              <li class="reasons-item">
+                <span class="reasons-count">600</span>
+                <p class="reasons-item-text">Pracowników zatrudnionych</p>
+              </li>
+              <li class="reasons-item">
+                <span class="reasons-count">50</span>
+                <p class="reasons-item-text">Aktywnych projektów</p>
+              </li>
+              <li class="reasons-item">
+                <span class="reasons-count">20</span>
+                <p class="reasons-item-text">Wniosków tygodniowo</p>
+              </li>
+              <li class="reasons-item reasons-item-dif">
+                <span class="reasons-count">300</span>
+                <p class="reasons-item-text">Wolnych miejsc pracy</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <!-- <section>
         <p>Indywidualnie podchodzimy do każdego procesu</p>
         <h2 hidden>zasadą NBD Grou</h2>
