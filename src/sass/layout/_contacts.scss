@@ -1,0 +1,67 @@
+.contacts-section {
+  //   padding: 85px 0;
+  margin-top: -4px;
+}
+
+.contact-wrap {
+  height: 500px;
+}
+
+.adress-title {
+  color: #fff;
+  //   font-family: Raleway;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+  margin-bottom: 20px;
+}
+
+.contacts-container {
+  padding: 85px 45px;
+}
+
+.contacts-item__link {
+  color: #9da4bd;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: calc(30 / 18);
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+}
+
+.contacts-item {
+  margin-bottom: 10px;
+}
+
+.link-adress::before {
+  content: url(../images/map-pin.png);
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+
+.link-phone::before {
+  content: url(../images/phone.png);
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+.link-letter::before {
+  content: url(../images/mail.png);
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+
+.contacts-pre-title {
+  margin-top: 40px;
+  color: var(--header-text-color);
+}
+
+.schedule {
+  font-size: 18px;
+  color: #9da4bd;
+  letter-spacing: 2%;
+  line-height: calc(30 / 18);
+}

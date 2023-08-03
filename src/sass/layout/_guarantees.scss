@@ -23,14 +23,7 @@
   line-height: calc(19 / 14);
   letter-spacing: 0.07px;
   color: var(--second-title-color);
-
-  &:not(:last-child) {
-    margin-bottom: 50px;
-  }
-
-  &:last-child {
-    margin-bottom: 50px;
-  }
+  margin: 30px 0;
 }
 
 .guarantees-list {
