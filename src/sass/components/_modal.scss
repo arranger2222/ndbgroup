@@ -7,7 +7,7 @@
   transition: opacity 500ms, visibility 500ms;
 }
 
-.backdrop.is-hidden {
+.backdrop.visually-hidden {
   .modal {
     transform: rotate(-300deg) scale(0.5);
   }
@@ -146,4 +146,6 @@
   }
 }
 
-
+.modal-open {
+  overflow: hidden;
+}
