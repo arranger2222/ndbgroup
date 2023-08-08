@@ -1,8 +1,0 @@
-Snappy maps key:
-82c409fa-89a5-4ed8-b0d7-1b7b4a0f902d
-
-google map key
-AIzaSyC1GktfZjz9eOIsfFse1UMQeMOSFsHIJlU
-
-52.40832 
-16.91052

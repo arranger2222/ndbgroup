@@ -61,8 +61,12 @@
 }
 
 .header-connect {
+  font-size: 12px;
+  font-weight: 600;
   margin-left: auto;
-  display: none;
+  position: absolute;
+  top: 600px;
+  right: 50px;
 }
 
 .header-connect__tel {

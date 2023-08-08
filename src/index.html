@@ -33,7 +33,7 @@
               ><span class="logo-text">group</span></a
             >
           </div>
-          <!-- <a href="#" class="logo"><img src="./images/logo_site.png" alt="logo" width="70" /></a> -->
+
           <ul class="nav-list list">
             <li class="nav-list__item">
               <a class="nav-list__link" href="#">O firmie</a>
@@ -58,7 +58,7 @@
           <img src="./images/mob-menu-icon.png" alt="burger menu" width="30" />
         </button>
       </div>
-      <div class="mob-menu is-hidden">
+      <div class="mob-menu visually-hidden">
         <div class="container">
           <div class="mob-menu-top">
             <button type="button" class="menu-close-btn">X</button>
@@ -419,7 +419,7 @@
     </footer>
 
     <!-- Modal -->
-    <div class="backdrop visually-hidden" data-modal>
+    <!-- <div class="backdrop visually-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           X
@@ -438,7 +438,7 @@
                 id="user-name"
               />
               <svg class="modal-icon" width="18" height="18">
-                <!-- <use href="./images/icons.svg#icon-person"></use> -->
+               
               </svg>
             </span>
           </div>
@@ -484,7 +484,7 @@
             <label for="modal-check" class="modal-check-text"
               ><span
                 ><svg class="modal-check-icon" width="16" height="15">
-                  <!-- <use href="./images/icons.svg#icon-check"></use> -->
+                 
                 </svg>
               </span>
               Подпишитесь на спам</label
@@ -495,10 +495,104 @@
           <button type="reset">Reset</button>
         </form>
       </div>
+    </div> -->
+
+    <!-- modal2 -->
+    <div class="backdrop visually-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close>
+          <svg width="11" height="11" class="modal-close__icon">
+            <use href="images/close-modal.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
+
+        <!-- ===================== ФОРМА МОДАЛКИ ========================= -->
+
+        <form id="myForm" class="modal-form">
+          <label class="modal-form__wrap">
+            <input
+              type="text"
+              name="name"
+              class="modal-form__input"
+              autocomplete="off"
+              placeholder=" "
+              required
+            />
+            <span class="modal-form__label">Imię</span>
+            <svg class="modal-form__icon" width="12" height="12">
+              <use href="images/sprite.svg#icon-name"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form__wrap">
+            <input
+              type="tel"
+              name="tel"
+              class="modal-form__input"
+              autocomplete="off"
+              placeholder=" "
+              required
+            />
+            <span class="modal-form__label">Numer</span>
+            <svg class="modal-form__icon" width="13" height="13">
+              <use href="images/sprite.svg#icon-tel"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form__wrap">
+            <input
+              type="email"
+              name="mail"
+              class="modal-form__input"
+              autocomplete="off"
+              placeholder=" "
+            />
+            <span class="modal-form__label">E-mail</span>
+            <svg class="modal-form__icon" width="15" height="12">
+              <use href="images/sprite.svg#icon-mail"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form__wrap comment">
+            <!-- <span class="comment-label">Wiadomość</span> -->
+            <textarea
+              name="comment"
+              class="modal-comment__input"
+              placeholder="Wiadomość"
+            ></textarea>
+          </label>
+
+          <!-- <label class="modal-checkbox">
+            <input
+              class="modal-checkbox--hidden"
+              type="checkbox"
+              name="privacy"
+              id="privacy-check"
+            />
+            <span class="modal-checkbox__icon"></span>
+            <span class="modal-checkbox__label">
+              Соглашаюсь с рассылкой и принимаю
+              <span class="modal-checkbox__link">Условия договора</span>
+            </span>
+          </label> -->
+          <button type="submit" class="modal-submit">Отправить</button>
+        </form>
+      </div>
     </div>
 
-    <script type="module" src="./index.js"></script>
-    <!-- <script type="module" src="./js/modal.js"></script> -->
+    <!-- <script type="module" src="./index.js"></script> -->
+    <script type="module" src="./js/modal.js"></script>
     <script type="module" src="./js/menu.js"></script>
+    <script type="module" src="./js/form-data.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init('SyAepLELGC9r2xpMk');
+      })();
+    </script>
   </body>
 </html>
