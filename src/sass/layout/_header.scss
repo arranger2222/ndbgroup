@@ -1,5 +1,7 @@
 .header {
   position: absolute;
+  // display: flex;
+
   width: 100%;
   top: 0;
   left: 0;
@@ -45,6 +47,9 @@
 .nav-list {
   // display: flex;
   display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .nav-list__item + .nav-list__item {
@@ -58,19 +63,6 @@
   &:focus {
     color: var(--accent-color);
   }
-}
-
-.header-connect {
-  font-size: 12px;
-  font-weight: 600;
-  margin-left: auto;
-  position: absolute;
-  top: 600px;
-  right: 50px;
-}
-
-.header-connect__tel {
-  color: var(--header-text-color);
 }
 
 .header-connect__btn {
@@ -110,6 +102,12 @@
 
 .menu-close-btn {
   margin-bottom: 30px;
+}
+
+.menu-open-btn {
+  @media screen and (min-width: 768px) {
+    visibility: hidden;
+  }
 }
 
 .mob-menu {

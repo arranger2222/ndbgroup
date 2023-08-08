@@ -33,31 +33,28 @@
               ><span class="logo-text">group</span></a
             >
           </div>
-
+          <button type="button" class="menu-open-btn">
+            <img src="./images/mob-menu-icon.png" alt="burger menu" width="30" />
+          </button>
           <ul class="nav-list list">
             <li class="nav-list__item">
-              <a class="nav-list__link" href="#">O firmie</a>
+              <a class="nav-list__link" href="#about">O firmie</a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="#">Nasze usługi</a>
+              <a class="nav-list__link" href="#reasons">Nasze usługi</a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="#">Nasz zespół</a>
+              <a class="nav-list__link" href="#guarantees">Gwarancje</a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="#">Kontakt</a>
+              <a class="nav-list__link" href="#contact">Kontakt</a>
             </li>
           </ul>
         </nav>
-        <div class="header-connect">
-          <a href="tel:+48733130895" class="header-connect__tel"
-            >+48 733 130 895</a
-          >
+        
         </div>
-        <button type="button" class="menu-open-btn">
-          <img src="./images/mob-menu-icon.png" alt="burger menu" width="30" />
-        </button>
-      </div>
+        
+      
       <div class="mob-menu visually-hidden">
         <div class="container">
           <div class="mob-menu-top">
@@ -136,12 +133,16 @@
             >
               Znajdź pracę
             </button>
+            <div class="header-connect">
+              <a href="tel:+48733130895" class="header-connect__tel"
+                >+48 733 130 895</a
+              >
           </div>
         </div>
       </section>
 
       <!-- O firmie -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="container about__container">
           <ul class="about-list about__list list">
             <li class="about-list__item">
@@ -250,7 +251,7 @@
       </section>
 
       <!-- Reasons -->
-      <section class="reasons section">
+      <section class="reasons section" id="reasons">
         <div class="container reasons-container">
           <div class="reasons-right">
             <p class="reasons-pre-title pre-title pre-title-dark-theme">
@@ -350,7 +351,7 @@
         ></iframe>
       </section>
       <!-- Contacts -->
-      <section class="contacts-section section">
+      <section class="contacts-section section" id="contact">
         <div class="contact-wrap">
           <div class="contacts-container container">
             <h2 class="adress-title">Kontakt</h2>
@@ -419,85 +420,7 @@
     </footer>
 
     <!-- Modal -->
-    <!-- <div class="backdrop visually-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="modal-close-btn" data-modal-close>
-          X
-        </button>
-        <p class="modal-title">Заголовок модального окна</p>
-        <form class="modal-form">
-          <div class="form-field">
-            <label for="user-name" class="modal-label">Введите имя*</label>
-            <span class="modal-input-wrap">
-              <input
-                type="text"
-                name="user-name"
-                class="modal-input"
-                placeholder="John Dou"
-                required
-                id="user-name"
-              />
-              <svg class="modal-icon" width="18" height="18">
-               
-              </svg>
-            </span>
-          </div>
-          <div class="form-field">
-            <label for="user-email" class="modal-label">Введите почту</label>
-            <input
-              type="email"
-              name="user-email"
-              class="modal-input"
-              placeholder="test@mail"
-              required
-              id="user-email"
-            />
-          </div>
 
-          <div class="form-field">
-            <label for="user-tel" class="modal-label">Введите телефон*</label>
-            <input
-              type="tel"
-              name="user-tel"
-              class="modal-input"
-              placeholder="+380"
-              required
-              id="user-tel"
-            />
-          </div>
-          <div class="form-field">
-            <label for="user-text" class="modal-label">Введите коммент</label>
-            <textarea
-              name="user-text"
-              id="user-text"
-              class="modal-text"
-              placeholder="коммент"
-            ></textarea>
-          </div>
-          <div class="form-field">
-            <input
-              type="checkbox"
-              class="modal-check"
-              id="modal-check"
-              name="modal-check"
-            />
-            <label for="modal-check" class="modal-check-text"
-              ><span
-                ><svg class="modal-check-icon" width="16" height="15">
-                 
-                </svg>
-              </span>
-              Подпишитесь на спам</label
-            >
-          </div>
-
-          <button type="submit">Submit</button>
-          <button type="reset">Reset</button>
-        </form>
-      </div>
-    </div> -->
-
-    <!-- modal2 -->
     <div class="backdrop visually-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" data-modal-close>
@@ -505,7 +428,9 @@
             <use href="images/close-modal.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
+        <h2 class="modal__title">
+          Zostaw swoje kontakty, a my skontaktujemy się z Tobą
+        </h2>
 
         <!-- ===================== ФОРМА МОДАЛКИ ========================= -->
 
@@ -576,7 +501,7 @@
               <span class="modal-checkbox__link">Условия договора</span>
             </span>
           </label> -->
-          <button type="submit" class="modal-submit">Отправить</button>
+          <button type="submit" class="modal-submit btn">Wysyłać</button>
         </form>
       </div>
     </div>
