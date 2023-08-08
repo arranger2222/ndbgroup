@@ -1,2 +1,0 @@
-document.getElementById("myForm").onsubmit=function(n){n.preventDefault(),function(){const n=document.getElementById("myForm");emailjs.sendForm("service_ci8i7b2","template_uw3wr6i",n).then((function(n){console.log("Message sent successfully!",n),e.classList.add("visually-hidden"),o.classList.remove("modal-open")}),(function(e){console.log("An error occurred while sending the message:",e)})),n.reset()}()};const e=document.querySelector(".backdrop"),o=document.querySelector("body");
-//# sourceMappingURL=index.114de396.js.map
