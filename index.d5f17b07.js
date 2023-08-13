@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",(function(){const e=document.querySelectorAll(".nav-list__link");for(const n of e)n.addEventListener("click",t);function t(e){e.preventDefault();const t=this.getAttribute("href"),n=document.querySelector(t);if(n){const e=n.offsetTop,t=window.pageYOffset,o=e-t,i=1e3;let c=null;requestAnimationFrame((function e(n){null===c&&(c=n);const r=n-c;var l,s,u;window.scrollTo(0,(l=r,s=t,u=o,(l/=i/2)<1?u/2*l*l*l+s:u/2*((l-=2)*l*l+2)+s)),r<i&&requestAnimationFrame(e)}))}}}));
+//# sourceMappingURL=index.d5f17b07.js.map
