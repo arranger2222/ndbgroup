@@ -7,6 +7,11 @@
   flex-direction: column;
 }
 
+.about__container {
+  display: flex;
+  padding: 0 23px;
+}
+
 .garantees-container {
   display: flex;
   flex-direction: column;
@@ -18,11 +23,13 @@
   margin-right: 64px;
   @include tab {
     display: flex;
+    flex-direction: column;
   }
 }
 
-.about-list__item + .about-list__item {
-  margin-left: 30px;
+.about-list__item:first-child {
+  margin-bottom: 30px;
+  // outline: 1px solid red;
 }
 
 .about-wrap__pre-title {
@@ -69,4 +76,8 @@
   &:focus {
     color: var(--accent-color);
   }
+}
+
+.about-img {
+  width: 330px;
 }

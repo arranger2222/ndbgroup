@@ -25,7 +25,7 @@
     <!-- Header -->
 
     <header class="header">
-      <div class="container header__container">
+      <div class="header__container container">
         <nav class="navigation">
           <div class="logo__container">
             <a href="#" class="logo__link"
@@ -34,7 +34,11 @@
             >
           </div>
           <button type="button" class="menu-open-btn">
-            <img src="./images/mob-menu-icon.png" alt="burger menu" width="30" />
+            <img
+              src="./images/mob-menu-icon.png"
+              alt="burger menu"
+              width="30"
+            />
           </button>
           <ul class="nav-list list">
             <li class="nav-list__item">
@@ -51,10 +55,8 @@
             </li>
           </ul>
         </nav>
-        
-        </div>
-        
-      
+      </div>
+
       <div class="mob-menu visually-hidden">
         <div class="container">
           <div class="mob-menu-top">
@@ -81,7 +83,7 @@
               >
               <button
                 type="button"
-                class="mob-contacts__btn btn"
+                class="mob-contacts__btn btn header__open-modal"
                 data-modal-open
               >
                 Znajdź pracę
@@ -133,10 +135,11 @@
             >
               Znajdź pracę
             </button>
-            <div class="header-connect">
-              <a href="tel:+48733130895" class="header-connect__tel"
-                >+48 733 130 895</a
-              >
+          </div>
+          <div class="header-connect">
+            <a href="tel:+48733130895" class="header-connect__tel"
+              >+48 733 130 895</a
+            >
           </div>
         </div>
       </section>
@@ -146,22 +149,55 @@
         <div class="container about__container">
           <ul class="about-list about__list list">
             <li class="about-list__item">
-              <img
-                src="./images/about_1.jpg"
-                alt="mężczyzna w garniturze i mężczyzna w kasku patrząc na dokument"
-                width="270"
-                class="about-img"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/desktop/about1_ds_270@1x.jpg 1x,
+                    ./images/desktop/about1_ds_270@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  srcset="
+                    ./images/tab/about1_tb_335@1x.jpg 1x,
+                    ./images/tab/about1_tb_335@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="about-img"
+                  src="./images/desktop/about1_ds_270@1x.jpg"
+                  alt="mężczyzna w garniturze i mężczyzna w kasku patrząc na dokument"
+                  width="270"
+                />
+              </picture>
             </li>
             <li class="about-list__item">
-              <img
-                src="./images/about_2.jpg"
-                alt="Młody mężczyzna w czarnym kapeluszu przeciwsłonecznym i białej koszuli stoi w pomieszczeniu, trzymając w jednej ręce dokument, a drugą pokazując kciuk do góry."
-                width="270"
-                class="about-img"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/desktop/about2_ds_270@1x.jpg 1x,
+                    ./images/desktop/about2_ds_270@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  srcset="
+                    ./images/tab/about2_tb_335@1x.jpg 1x,
+                    ./images/tab/about2_tb_335@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="about-img"
+                  src="./images/desktop/about2_ds_270@1x.jpg"
+                  alt="mężczyzna w garniturze i mężczyzna w kasku patrząc na dokument"
+                  width="270"
+                />
+              </picture>
             </li>
           </ul>
+
           <div class="about-wrap">
             <p class="about-wrap__pre-title pre-title pre-title--dark-theme">
               o firmie
@@ -196,55 +232,57 @@
         </div>
       </section>
 
-      <!-- Prices -->
-      <section class="prices section">
-        <div class="container">
-          <p class="prices-pre-title pre-title">Dbamy o naszych pracowników.</p>
-          <h2 class="prices-title section-title">Nasza działalność</h2>
-          <div class="price-wrap">
-            <ul class="prices-list list">
-              <li class="prices-item">
-                <p class="prices-text">
+      <!-- activity -->
+      <section class="activity section">
+        <div class="container activity__container">
+          <p class="activity-pre-title pre-title">
+            Dbamy o naszych pracowników.
+          </p>
+          <h2 class="activity-title section-title">Nasza działalność</h2>
+          <div class="activity-wrap">
+            <ul class="activity-list list">
+              <li class="activity-item">
+                <p class="activity-text">
                   Kwaterujemy i zapewniamy własnym transportem
                 </p>
               </li>
-              <li class="prices-item">
-                <p class="prices-text">
+              <li class="activity-item">
+                <p class="activity-text">
                   Legalizujemy pobyt i zatrudniamy cudzoziemców
                 </p>
               </li>
-              <li class="prices-item">
-                <p class="prices-text">
+              <li class="activity-item">
+                <p class="activity-text">
                   Rzetelno podchodzimy do procesu rekrutacji
                 </p>
               </li>
-              <li class="prices-item">
-                <p class="prices-text">
+              <li class="activity-item">
+                <p class="activity-text">
                   Wspieramy stały kontakt z koordynatorem projektu
                 </p>
               </li>
 
-              <li class="prices-item">
-                <p class="prices-text">
+              <li class="activity-item">
+                <p class="activity-text">
                   Każdy pracownik otrzymuje osobistego kierownika projektu
                 </p>
               </li>
-              <li class="prices-item">
-                <p class="prices-text">
+              <li class="activity-item">
+                <p class="activity-text">
                   Uruchamiamy projekty już od pięciu osób
                 </p>
               </li>
-              <li class="prices-item">
-                <p class="prices-text">
+              <li class="activity-item">
+                <p class="activity-text">
                   Minimalna ilość godzin w miesiącu na pracownika: 200
                 </p>
               </li>
-              <li class="prices-item">
-                <p class="prices-text">Wsparcie i konsultacje - 24/7</p>
+              <li class="activity-item">
+                <p class="activity-text">Wsparcie i konsultacje - 24/7</p>
               </li>
             </ul>
           </div>
-          <button type="button" class="prices-btn btn" data-modal-open>
+          <button type="button" class="activity-btn btn" data-modal-open>
             Znajdź pracę
           </button>
         </div>
@@ -292,7 +330,7 @@
       </section>
 
       <!-- Guarantees -->
-      <section class="guarantees section">
+      <section class="guarantees section" id="guarantees">
         <div class="garantees-container container">
           <p class="guarantees__pre-title pre-title pre-title--dark-theme">
             Gwarantujemy
@@ -402,6 +440,7 @@
           </div>
         </div>
       </section>
+      <button id="myBtn" title="Go to top">Top</button>
     </main>
 
     <!-- Footer -->
@@ -510,6 +549,8 @@
     <script type="module" src="./js/modal.js"></script>
     <script type="module" src="./js/menu.js"></script>
     <script type="module" src="./js/form-data.js"></script>
+    <script type="module" src="./js/top-btn.js"></script>
+    <script type="module" src="./js/smooth-scroll.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
