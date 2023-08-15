@@ -1,10 +1,12 @@
 .contact-wrap {
   background-color: #191c26;
-  background-image: url(../images/online-bg.png);
+  background-image: url(../images/tab/contact_bg_tb@.png);
   background-repeat: no-repeat;
-  background-position: right;
+  background-size: cover;
+  background-position: center;
+  // background-position: right;
   // background-size: calc(100% / 2 - 15px);
-  .container {
-    // display: flex;
-  }
+  // .container {
+  //   // display: flex;
+  // }
 }

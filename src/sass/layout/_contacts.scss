@@ -1,10 +1,18 @@
 .contacts-section {
-  //   padding: 85px 0;
-  margin-top: -4px;
+  // padding: 85px 0;
+  margin-top: -5px;
+  // @include tab {
+  //   padding: 45px 0;
+  // }
 }
 
 .contact-wrap {
-  height: 500px;
+  // margin: -85px 0;
+  // height: 500px;
+  padding: 85px 0;
+  @include tab {
+    padding: 45px 0;
+  }
 }
 
 .adress-title {
@@ -17,10 +25,31 @@
   margin-bottom: 20px;
 }
 
-.contacts-container {
-  padding: 85px 45px;
+.adress-tab {
+  margin-left: 35px;
 }
 
+.contacts-container {
+  padding: 0 45px;
+  @include tab {
+    display: flex;
+  }
+}
+
+.contacts-left,
+.contacts-right {
+  width: 100%;
+  // outline: 1px solid red;
+}
+
+.contacts-right {
+  display: flex;
+  align-items: center;
+}
+
+// .schedule-container {
+//   margin: auto 0;
+// }
 .contacts-item__link {
   color: #9da4bd;
   font-size: 18px;
@@ -29,6 +58,11 @@
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
 }
+
+// .contacts-list {
+//   outline: 1px solid red;
+
+// }
 
 .contacts-item {
   margin-bottom: 10px;
@@ -57,6 +91,9 @@
 .contacts-pre-title {
   margin-top: 40px;
   color: var(--header-text-color);
+  @include tab {
+    margin: 0;
+  }
 }
 
 .schedule {

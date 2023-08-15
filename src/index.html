@@ -332,49 +332,86 @@
       <!-- Guarantees -->
       <section class="guarantees section" id="guarantees">
         <div class="garantees-container container">
-          <p class="guarantees__pre-title pre-title pre-title--dark-theme">
-            Gwarantujemy
-          </p>
-          <h2 hidden>zasadą NBD Grou</h2>
-          <p class="guarantees-after-title">
-            Gwarantujemy profesjonalne wsparcie w pozyskaniu pracowników.
-            Załatwimy wszelkie wymagane formalności, pomagamy na każdym etapie
-            rekrutacji, od zatrudnienia po kompleksową obsługę w trakcie trwania
-            kontraktu.
-          </p>
-          <p class="guarantees-after-title">
-            Pierwszą zasadą NBD Group jest to, że traktujemy naszych pracowników
-            tak, jak sami chcielibyśmy być traktowani, pracując w innym kraju.
-            Oznacza to, że dobrze organizujemy im pracę, zapewniamy uczciwe,
-            odpowiednie wynagrodzenie, pomagamy w załatwieniu formalności.
-          </p>
-          <p class="guarantees-after-title">
-            Tworzymy grupę kompetentnych oraz dynamicznie działających osób. W
-            codziennych zadaniach nacisk kładziemy na sprawną organizację pracy
-            przy zachowaniu elastycznych form działania dopasowaną indywidualnie
-            dla każdego Użytkownika.
-          </p>
-          <button
-            type="button"
-            class="guarantees__btn btn modal-open"
-            data-modal-open
-          >
-            Znajdź pracę
-          </button>
-          <ul class="guarantees-list">
+          <div class="garantees-content-wrap">
+            <p class="guarantees__pre-title pre-title pre-title--dark-theme">
+              Gwarantujemy
+            </p>
+            <h2 hidden>zasadą NBD Grou</h2>
+            <p class="guarantees-after-title">
+              Gwarantujemy profesjonalne wsparcie w pozyskaniu pracowników.
+              Załatwimy wszelkie wymagane formalności, pomagamy na każdym etapie
+              rekrutacji, od zatrudnienia po kompleksową obsługę w trakcie
+              trwania kontraktu.
+            </p>
+            <p class="guarantees-after-title">
+              Pierwszą zasadą NBD Group jest to, że traktujemy naszych
+              pracowników tak, jak sami chcielibyśmy być traktowani, pracując w
+              innym kraju. Oznacza to, że dobrze organizujemy im pracę,
+              zapewniamy uczciwe, odpowiednie wynagrodzenie, pomagamy w
+              załatwieniu formalności.
+            </p>
+            <p class="guarantees-after-title">
+              Tworzymy grupę kompetentnych oraz dynamicznie działających osób. W
+              codziennych zadaniach nacisk kładziemy na sprawną organizację
+              pracy przy zachowaniu elastycznych form działania dopasowaną
+              indywidualnie dla każdego Użytkownika.
+            </p>
+            <button
+              type="button"
+              class="guarantees__btn btn modal-open"
+              data-modal-open
+            >
+              Znajdź pracę
+            </button>
+          </div>
+          <ul class="guarantees-list list">
             <li class="guarantees-list__item">
-              <img
-                src="./images/workers_1.jpg"
-                alt="dwóch mężczyzn pracujących na torach kolejowych"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/desktop/garantees1_ds_270@x1.jpg 1x,
+                    ./images/desktop/garantees1_ds_270@x2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  srcset="
+                    ./images/tab/garantees1_tb_330@x1.jpg 1x,
+                    ./images/tab/garantees1_tb_330@x2.jpg 2x
+                  "
+                />
+                <img
+                  class="guarantees-img"
+                  src="./images/desktop/garantees1_ds_270@x1.jpg"
+                  alt="mężczyzna w garniturze i mężczyzna w kasku patrząc na dokument"
+                  width="270"
+                />
+              </picture>
             </li>
-            <li class="guarantees-list__item">
-              <img
-                src="./images/workers_2.jpg"
-                alt="kobieta ubrana w kamizelkę bezpieczeństwa i trzymająca dozownik taśmy"
-                width="270"
-              />
+            <li class="about-list__item">
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/desktop/garantees2_ds_270@x1.jpg 1x,
+                    ./images/desktop/garantees2_ds_270@x2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  srcset="
+                    ./images/tab/garantees2_tb_330@x1.jpg 1x,
+                    ./images/tab/garantees2_tb_330@x2.jpg 2x
+                  "
+                />
+                <img
+                  class="guarantees-img"
+                  src="./images/desktop/garantees2_ds_270@x1.jpg"
+                  alt="mężczyzna w garniturze i mężczyzna w kasku patrząc na dokument"
+                  width="270"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -392,51 +429,58 @@
       <section class="contacts-section section" id="contact">
         <div class="contact-wrap">
           <div class="contacts-container container">
-            <h2 class="adress-title">Kontakt</h2>
-            <address>
-              <ul class="contacts-list list">
-                <li class="contacts-item">
-                  <a
-                    class="contacts-item__link link-adress"
-                    href="https://goo.gl/maps/J15sbLDSEzuWAUvs8"
-                    target="_blank"
-                    >ul.Zwierzyniecka 10/313 60-813 Poznań</a
-                  >
-                </li>
-                <li class="contacts-item">
-                  <a
-                    class="contacts-item__link link-phone"
-                    href="tel:+48733130895"
-                    >+48 733 130 895</a
-                  >
-                </li>
-                <li class="contacts-item">
-                  <a
-                    class="contacts-item__link link-phone"
-                    href="tel:+48574827097"
-                    >+48 574 827 097</a
-                  >
-                </li>
-                <li class="contacts-item">
-                  <a
-                    class="contacts-item__link link-phone"
-                    href="tel:+48514275060"
-                    >+48 514 275 060</a
-                  >
-                </li>
-                <li class="contacts-item">
-                  <a
-                    class="contacts-item__link link-letter"
-                    href="mailto:nbdgroup@ukr.net"
-                    >nbdgroup@ukr.net</a
-                  >
-                </li>
-              </ul>
-            </address>
-            <p class="contacts-pre-title pre-title pre-title--light-theme">
-              grafik pracy
-            </p>
-            <p class="schedule">Pon.- Pt. 9:00 - 17:00</p>
+            <div class="contacts-left">
+              <h2 class="adress-title">Kontakt</h2>
+              <address>
+                <ul class="contacts-list list">
+                  <li class="contacts-item">
+                    <a
+                      class="contacts-item__link link-adress"
+                      href="https://goo.gl/maps/J15sbLDSEzuWAUvs8"
+                      target="_blank"
+                      >ul.Zwierzyniecka 10/313 <br />
+                      <span class="adress-tab">60-813 Poznań</span></a
+                    >
+                  </li>
+                  <li class="contacts-item">
+                    <a
+                      class="contacts-item__link link-phone"
+                      href="tel:+48733130895"
+                      >+48 733 130 895</a
+                    >
+                  </li>
+                  <li class="contacts-item">
+                    <a
+                      class="contacts-item__link link-phone"
+                      href="tel:+48574827097"
+                      >+48 574 827 097</a
+                    >
+                  </li>
+                  <li class="contacts-item">
+                    <a
+                      class="contacts-item__link link-phone"
+                      href="tel:+48514275060"
+                      >+48 514 275 060</a
+                    >
+                  </li>
+                  <li class="contacts-item">
+                    <a
+                      class="contacts-item__link link-letter"
+                      href="mailto:nbdgroup@ukr.net"
+                      >nbdgroup@ukr.net</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="contacts-right">
+              <div class="schedule-container">
+                <p class="contacts-pre-title pre-title pre-title--light-theme">
+                  grafik pracy
+                </p>
+                <p class="schedule">Pon.- Pt. 9:00 - 17:00</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

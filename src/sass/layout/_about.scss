@@ -12,11 +12,6 @@
   padding: 0 23px;
 }
 
-.garantees-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .about-list {
   display: none;
   flex-shrink: 0;
@@ -24,11 +19,12 @@
   @include tab {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
 }
 
 .about-list__item:first-child {
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
   // outline: 1px solid red;
 }
 

@@ -5,6 +5,15 @@
   //   flex-direction: column;
 }
 
+.garantees-container {
+  padding: 0 40px;
+  // flex-direction: column;
+  @include tab {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .guarantees__pre-title {
   margin-bottom: 20px;
   &::before {
@@ -28,6 +37,18 @@
 
 .guarantees-list {
   display: none;
+  flex-shrink: 0;
+  margin-left: 64px;
+  @include tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.guarantees-list__item:first-child {
+  // margin-bottom: 35px;
+  // outline: 1px solid red;
 }
 
 .guarantees__btn {
