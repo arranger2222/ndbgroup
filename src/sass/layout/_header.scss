@@ -13,6 +13,8 @@
   padding-top: 32px;
   padding-bottom: 31px;
   // outline: 1px solid red;
+  @include desk {
+  }
 }
 
 .logo__container {
@@ -53,19 +55,24 @@
   // justify-content: space-between;
   // @extend %align-list;
   // outline: 1px solid blue;
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: flex;
+  }
+
+  @include desk {
+    max-width: 1280px;
   }
 }
 
 .navigation {
-  // @extend %align-list;
   display: flex;
-  // justify-content: space-between;
+  justify-content: space-between;
+  // outline: 1px solid brown;
 }
 
 .nav-list {
   // display: flex;
+  align-items: end;
   // outline: 1px solid cornflowerblue;
   display: none;
   @media screen and (min-width: 768px) {

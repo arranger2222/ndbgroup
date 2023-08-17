@@ -4,6 +4,20 @@
   // @include tab {
   //   padding: 45px 0;
   // }
+  @include desk {
+    width: 50%;
+    height: 600px;
+    // outline: 1px solid red;
+    margin-top: 0;
+  }
+}
+
+.map {
+  @include desk {
+    width: 50%;
+    height: 600px;
+    // outline: 1px solid blue;
+  }
 }
 
 .contact-wrap {
@@ -12,6 +26,10 @@
   padding: 85px 0;
   @include tab {
     padding: 45px 0;
+  }
+  @include desk {
+    height: 100%;
+    // outline: 2px solid green;
   }
 }
 
@@ -34,6 +52,11 @@
   @include tab {
     display: flex;
   }
+  @include desk {
+    flex-direction: column;
+    padding-left: 100px;
+    padding-top: 40px;
+  }
 }
 
 .contacts-left,
@@ -45,6 +68,9 @@
 .contacts-right {
   display: flex;
   align-items: center;
+  @include desk {
+    margin-top: 60px;
+  }
 }
 
 // .schedule-container {
@@ -101,4 +127,13 @@
   color: #9da4bd;
   letter-spacing: 2%;
   line-height: calc(30 / 18);
+  @include desk {
+    margin-top: 20px;
+  }
+}
+
+.map-and-contacts-wrap {
+  @include desk {
+    display: flex;
+  }
 }

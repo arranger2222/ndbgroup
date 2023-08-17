@@ -1,5 +1,8 @@
 .about {
   padding: 85px 0;
+  @include desk {
+    padding: 130px 0;
+  }
 }
 
 .about-wrap {
@@ -21,11 +24,10 @@
     flex-direction: column;
     justify-content: space-between;
   }
-}
 
-.about-list__item:first-child {
-  // margin-bottom: 30px;
-  // outline: 1px solid red;
+  @include desk {
+    flex-direction: row;
+  }
 }
 
 .about-wrap__pre-title {
@@ -63,6 +65,9 @@
     color: var(--accent-color);
     font-weight: bold;
   }
+  @include desk {
+    margin-bottom: 25px;
+  }
 }
 
 .about-wrap__btn {
@@ -74,6 +79,11 @@
   }
 }
 
-.about-img {
-  width: 330px;
+.about-list__item:first-child {
+  margin-bottom: 44px;
+  @include desk {
+    &:first-child {
+      margin-right: 30px;
+    }
+  }
 }

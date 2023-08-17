@@ -44,9 +44,15 @@
     flex-direction: column;
     justify-content: space-between;
   }
+  @include desk {
+    flex-direction: row-reverse;
+  }
 }
 
 .guarantees-list__item:first-child {
+  @include desk {
+    margin-left: 30px;
+  }
   // margin-bottom: 35px;
   // outline: 1px solid red;
 }

@@ -1,8 +1,8 @@
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 60px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
+  bottom: 30px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
@@ -15,7 +15,9 @@
 }
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: var(
+    --accent-color
+  ); /* Add a dark-grey background on hover */
 }
 
 #myBtn.red {

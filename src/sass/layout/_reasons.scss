@@ -4,16 +4,22 @@
 
 .reasons-container {
   padding: 0 40px;
+  @include desk {
+    display: flex;
+    flex-direction: row-reverse;
+  }
   // outline: 1px solid red;
   // display: flex;
   // flex-direction: column-reverse;
   // justify-content: space-between;
 }
 
-// .reasons-left,
-// .reasons-right {
-//   width: calc((100% - 30px) / 2);
-// }
+.reasons-left,
+.reasons-right {
+  @include desk {
+    width: calc((100% - 30px) / 2);
+  }
+}
 
 // .reasons-left {
 //   display: flex;

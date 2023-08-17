@@ -8,11 +8,9 @@ const refs = {
 
 const headerOpenModal = document.querySelector('.header__open-modal');
 
-console.log(headerOpenModal);
-
-headerOpenModal.addEventListener('click', () => {
-  console.log('click on header modal-open button');
-});
+// headerOpenModal.addEventListener('click', () => {
+//   console.log('click on header modal-open button');
+// });
 
 for (const button of refs.openModalBtns) {
   button.addEventListener('click', toggleModal);
@@ -35,4 +33,22 @@ document.addEventListener('keydown', event => {
 function toggleModal() {
   refs.modal.classList.toggle('visually-hidden');
   refs.body.classList.toggle('modal-open');
+
+  if (refs.modal.classList.contains('visually-hidden')) {
+    removePaddingFromBody();
+  } else {
+    addPaddingToBody();
+  }
+}
+
+const scrollbarWidth = window.innerWidth - document.body.offsetWidth;
+
+function addPaddingToBody() {
+  refs.body.style.overflow = 'hidden';
+  refs.body.style.paddingRight = `${scrollbarWidth}px`;
+}
+
+function removePaddingFromBody() {
+  refs.body.style.overflow = '';
+  refs.body.style.paddingRight = '0';
 }

@@ -29,19 +29,45 @@
 }
 
 .activity-wrap {
-  // display: flex;
   // flex-wrap: wrap;
+  padding: 30px 16px;
   margin-bottom: 50px;
-  //
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  @include tab {
+    padding: 30px 75px;
+  }
+  @include desk {
+    display: flex;
+    padding: 0;
+  }
 }
 
 .activity-list {
   width: 100%;
-  padding: 30px 16px;
-  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  // padding: 30px 16px;
+
   @include tab {
     width: 100%;
+    // padding: 30px 75px;
+  }
+  @include desk {
+    width: 50%;
     padding: 30px 75px;
+  }
+}
+
+.activity-list-right {
+  margin-top: 30px;
+
+  @include desk {
+    // outline: 1px solid red;
+    padding-left: 40px;
+    padding-right: 20px;
+    // width: 50%;
+
+    height: 100%;
+    margin-top: 0;
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   }
 }
 
@@ -62,6 +88,9 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 .activity-item {
