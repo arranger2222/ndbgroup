@@ -50,11 +50,13 @@
 }
 
 .guarantees-list__item:first-child {
+  @include tab {
+    margin-bottom: 35px;
+    // outline: 1px solid red;
+  }
   @include desk {
     margin-left: 30px;
   }
-  // margin-bottom: 35px;
-  // outline: 1px solid red;
 }
 
 .guarantees__btn {
