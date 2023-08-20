@@ -138,6 +138,7 @@
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--first-text-color);
+  transition: $main-transition;
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -202,14 +203,17 @@
   font-size: 12px;
   font-weight: 600;
   position: absolute;
-  top: 600px;
+  top: 570px;
   right: 50px;
+  cursor: pointer;
+
   @include tab {
     top: 700px;
     right: 70px;
   }
   @include desk {
     top: 50px;
+    z-index: 10;
   }
 }
 

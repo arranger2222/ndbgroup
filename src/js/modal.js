@@ -4,6 +4,7 @@ const refs = {
   modal: document.querySelector('[data-modal]'),
   backdrop: document.querySelector('.backdrop'),
   body: document.querySelector('body'),
+  topBtn: document.querySelector('#myBtn'),
 };
 
 const headerOpenModal = document.querySelector('.header__open-modal');
@@ -33,6 +34,7 @@ document.addEventListener('keydown', event => {
 function toggleModal() {
   refs.modal.classList.toggle('visually-hidden');
   refs.body.classList.toggle('modal-open');
+  refs.topBtn.classList.toggle('visually-hidden');
 
   if (refs.modal.classList.contains('visually-hidden')) {
     removePaddingFromBody();

@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const navLinks = document.querySelectorAll('.nav-list__link');
+  const navLinks = document.querySelectorAll('.mob-menu-list__link');
+  const menu = document.querySelector('.mob-menu');
+  const body = document.querySelector('body');
 
+  console.log(menu);
   for (const link of navLinks) {
     link.addEventListener('click', smoothScroll);
   }
@@ -36,5 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       requestAnimationFrame(animate);
     }
+    menu.classList.toggle('hidden-modal');
+    body.classList.toggle('modal-open');
   }
 });

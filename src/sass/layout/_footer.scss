@@ -30,6 +30,11 @@
   font-size: 12px;
   font-weight: 600;
   color: #303030;
+  transition: $main-transition;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .copyrights {
