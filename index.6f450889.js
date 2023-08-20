@@ -1,0 +1,2 @@
+(()=>{const e={openMenuBtn:document.querySelector(".menu-open-btn"),closeMenuBtn:document.querySelector(".menu-close-btn"),menu:document.querySelector(".mob-menu"),body:document.querySelector("body")};function n(){e.body.classList.toggle("modal-open"),e.menu.classList.toggle("hidden-modal")}e.openMenuBtn.addEventListener("click",n),e.closeMenuBtn.addEventListener("click",n)})();
+//# sourceMappingURL=index.6f450889.js.map
