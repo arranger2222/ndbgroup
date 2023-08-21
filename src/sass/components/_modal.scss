@@ -5,19 +5,19 @@
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
-  // transition: opacity transform;
+  transition: opacity transform 300ms;
   opacity: 1;
   &.visually-hidden {
     opacity: 0;
-    // pointer-events: none;
-    // transform: translate(-50%, -50%) scale(0.9);
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
   }
 
   &.visually-hidden .modal {
     opacity: 0;
-    // transition-duration: 5000ms;
-    // transition: opacity transform;
-    // transform: translate(-50%, -50%) scale(0.9);
+    transition-duration: 300ms;
+    transition: opacity transform;
+    transform: translate(-50%, -50%) scale(0.9);
   }
 }
 
@@ -30,8 +30,8 @@
   top: 50%;
   left: 50%;
 
-  // transition-duration: 5000ms;
-  // opacity: 1;
+  transition-duration: 300ms;
+  opacity: 1;
   transform: translate(-50%, -50%);
 
   padding: 40px;
@@ -85,79 +85,6 @@
     transform: rotate(180deg);
     transform-origin: 50% 50%;
     transition: $main-transition;
-  }
-}
-
-.modal-checkbox {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: $secondary-color;
-  padding-bottom: 30px;
-
-  &__link {
-    color: $secondary-color;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-  }
-
-  &__link:hover {
-    cursor: pointer;
-  }
-
-  &__label {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: $secondary-text-color;
-    // @include respond-to(desktop) {
-    //   font-size: 14px;
-    //   line-height: 1.7;
-    //   letter-spacing: 0.03em;
-    // }
-  }
-  &__icon {
-    display: inline-block;
-    width: 16px;
-    height: 15px;
-    min-height: 16px;
-    min-width: 16px;
-    border: 2px solid #000;
-    border-radius: 2px;
-    margin-right: 9px;
-    transition: border $main-transition;
-  }
-
-  &--hidden:checked + .modal-checkbox__icon {
-    background-color: $secondary-color;
-    border-color: $secondary-color;
-    background-image: url('../images/icon check.svg');
-    background-size: contain;
-    background-origin: border-box;
-  }
-
-  &--hidden:focus ~ .modal-checkbox__icon {
-    border: 2px solid $secondary-color;
-  }
-
-  &:hover .modal-checkbox__icon {
-    border: 2px solid $secondary-color;
-  }
-
-  &--hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
   }
 }
 
@@ -273,6 +200,7 @@
 }
 
 .modal-submit {
+  color: #000;
   display: block;
   margin: 0 auto;
   margin-top: 30px;
